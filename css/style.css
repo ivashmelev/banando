@@ -1,0 +1,224 @@
+html, body{
+  padding: 0; margin: 0;
+}
+
+.wrapper{
+  margin: 0; padding: 0;
+  width: 100%;
+  margin: auto;
+}
+
+.background{
+  padding: 155px 0 100px;
+  margin-bottom: 0;
+  background-image: url(/img/hero.jpg);
+  background-position: -290px 0px;
+  background-repeat: repeat;
+  background-size: cover;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  height: 813px;
+  width: 100%;
+  left: auto;
+}
+
+.content{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  position: relative;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-weight: 800;
+  color: white;
+  font-size: 48px;
+}
+
+.title__text-yellow{
+  color: #ecd02c;
+}
+
+.calc{
+  width: 485px;
+  height: 486px;
+  background: white;
+  border-radius: 6px
+}
+
+.block_icon{
+  width: 75%;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+}
+
+.icon__text{
+  font-family: Montserrat;
+  font-size: 15px;
+  color: white;
+  margin-left: 15px;
+}
+
+.how_work{
+  position: relative;
+  z-index: 100;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 120px;
+  justify-content: space-between;
+}
+
+.how_work__title{
+  width: 30%;
+}
+
+.how_work__title__text{
+  font-family: Montserrat;
+  font-weight: 800;
+  color: #373737;
+  font-size: 37px;
+}
+
+.how_work__wrapper_block_icon{
+  display: flex;
+  flex-direction: column; 
+  width: 70%;
+}
+
+.how_work__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.how_work__block_icon{
+  display: flex;
+  flex-direction: row;
+}
+
+.how_work__text{
+  margin-left: 20px;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+.get_money{
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+}
+
+.get_money__title{
+  width: 30%;
+}
+
+.get_money__title__text{
+  font-family: Montserrat;
+  font-weight: 800;
+  color: #373737;
+  font-size: 37px;
+}
+
+.get_money__wrapper_block_card{
+  width: 70%;
+  margin: auto;
+}
+
+.card{
+  width: 53%;
+  padding: 50px 45px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  margin: auto;
+  height: 208px;
+  justify-content: space-between;
+}
+
+.card__title{
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: 600px;
+  font-size: 16px;
+}
+
+.card__bank{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card__number{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Montserrat;
+  font-weight: 200;
+  font-size: 34px;
+}
+
+.card__period{
+  font-size: 13px;
+  width: 100%;
+  font-family: Montserrat;
+}
+
+.about{
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.about__title{
+  width: 30%;
+}
+
+.about__title__text{
+  font-family: Montserrat;
+  font-weight: 800;
+  color: #373737;
+  font-size: 37px;
+}
+
+.about__text{
+  width: 70%;
+  margin: auto;
+}
+
+.about__text__text{
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+
+
