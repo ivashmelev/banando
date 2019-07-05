@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/js/maskedinput.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
@@ -22,8 +24,5 @@
     </div>
 </body>
 <link rel="stylesheet" href="/css/reg.css">
-<script>
-    console.log(1);
-</script>
 <script src="/js/form.js"></script>
 </html>

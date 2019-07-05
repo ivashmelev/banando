@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ivashmelev/banando#readme",
   "dependencies": {
+    "jquery": "^3.4.1",
+    "maskedinput": "^3.3.11",
     "nouislider": "^14.0.2"
   }
 }
