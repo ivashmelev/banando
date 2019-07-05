@@ -1,0 +1,22 @@
+{
+  "name": "banando.loc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivashmelev/banando.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivashmelev/banando/issues"
+  },
+  "homepage": "https://github.com/ivashmelev/banando#readme",
+  "dependencies": {
+    "nouislider": "^14.0.2"
+  }
+}

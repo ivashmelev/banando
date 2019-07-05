@@ -47,8 +47,8 @@ html, body{
   color: #ccdd00;
 }
 
-.calc{
-  width: 485px;
+.calc_section{
+  width: 640px;
   height: 486px;
   background: white;
   border-radius: 6px

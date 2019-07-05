@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+<script src="/node_modules/nouislider/distribute/nouislider.js"></script>
+<link rel="stylesheet" href="/node_modules/nouislider/distribute/nouislider.css">
+<link rel="stylesheet" href="/css/calc.css">
+<div class="calc">
+    <div class="calc_column" style="width: 60%;">
+        <div class="wrapper_calc">
+            <span class="calc__title">Сколько вам нужно?</span>
+            <div class="calc__slider" id="amount"></div>
+        </div>
+    
+        <div class="wrapper_calc">
+            <span class="calc__title">На какой срок?</span>
+            <div class="calc__slider" id="period"></div>
+        </div>
+    
+        <div class="calc__result">
+            <div class="result">
+                <span class="result__text">Занимаете</span>
+                <span class="result__number" id="one"></span>
+            </div>
+    
+            <div class="result">
+                <span class="result__text">Проценты</span>
+                <span class="result__number">0</span>
+            </div>
+    
+            <div class="result">
+                <span class="result__text">К возврату</span>
+                <span class="result__number" id="three"></span>
+            </div>
+    
+            <!-- <div class="result__inner">
+                <img src="" alt="" class="result__icon">
+                <div class="result">
+                    <span class="result__text">Возврат - суббота</span>
+                    <span class="result__number">13 июля, 2019</span>
+                </div>
+            </div> -->
+        </div>
+        <div class="calc__slogan">
+                <span class="calc__slogan__text">Первый займ - абсолютно бесплатно! <br/>При условии оплаты займа в срок</span>
+            </div>
+    </div>
+    <div class="calc_column" style="align-items: center; width: 30%;">
+        <div class="block_calc_number">
+            <span class="calc_number__number"></span>
+            <span class="calc_number__text" id="amountStr"></span> 
+        </div>
+        <div class="block_calc_number">
+            <span class="calc_number__number" id="periodStr"></span>
+            <span class="calc_number__text"></span> ДНЕЙ
+        </div>
+        <a href="/reg"> <button class="button calc">Получить заем</button> </a>
+
+    </div>
+            
+</div>
+<script src="/js/calc.js"></script>

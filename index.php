@@ -19,7 +19,9 @@
 				<span class="title__text-yellow">займ под 0%</span>
 			</div>
 			
-			<div class="calc"></div>
+			<div class="calc_section">
+				<?php require_once("calc.html"); ?>
+			</div>
 		</section>
 
 		<section class="block_icon">
