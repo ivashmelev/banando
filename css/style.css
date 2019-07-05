@@ -249,7 +249,8 @@ html, body{
   background-color: #b6c31c;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) { */
+  @media only screen and (min-width: 720px) and (max-width: 1024px) {
   .content{
     flex-direction: column;
   }
@@ -304,7 +305,7 @@ html, body{
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 720px) {
   .content{
     flex-direction: column;
     width: 100%;
@@ -367,5 +368,50 @@ html, body{
   .about__text {
     margin-top: 35px;
   }
+
+  .title{
+    text-align: center;
+  }
+
+  .background{
+    /* background-color: #01a3bc; */
+    /* background-image: unset; */
+    background-position: -435px 0px;
+  }
+
+  .block_icon{
+    display: none;
+  }
+
+  .how_work{
+    margin-top: 430px;
+  }
+
+  .how_work__title{
+    width: 100%;
+  }
+  
+  .how_work__row{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .how_work__block_icon{
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .get_money{
+    display: none;
+  }
+
+  .about__title{
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+
 }
 
