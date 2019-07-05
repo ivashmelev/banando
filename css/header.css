@@ -47,3 +47,17 @@ header{
     margin-top: 15px;
     color: white;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .logo img {
+        display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+}
