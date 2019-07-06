@@ -45,7 +45,7 @@ span{
 .block_calc_number{
     display: flex;
     flex-direction: row;
-    margin-top: 43px;
+    margin-top: -40px;
     font-family: Montserrat;
     margin-right: 45px;
 }
@@ -61,6 +61,7 @@ span{
 
 .calc_number__text{
     margin-left: 15px;
+    width: 100%;
 }
 
 .button.calc{
@@ -95,6 +96,28 @@ a{
     flex-direction: column;
 }
 
+.chance__number{
+    color: #ccdb2a;
+    font-weight: 600;
+    font-size: 24px;
+    width: 55%;
+}
+
+.chance{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.calc__timer{
+    font-size: 44px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 @media only screen and (min-width : 320px) and (max-width : 720px) {
     .calc_section{
         width: 100%;
@@ -125,7 +148,7 @@ a{
     }
 
     .calc_number__text{
-        width: 100%;
+        width: 390px;
     }
 
     .block_calc_number {
@@ -145,5 +168,14 @@ a{
         margin-bottom: 25px;
         height: 80px;
     }
+
+    .chance{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+    }
+    
+    
 
 }

@@ -19,7 +19,7 @@
         <span class="copyright__logo__text">Banando</span>
     </div>
     <div class="copyright__timer">
-        <span class="copyright__timer__text">Заполните заявку сейчас, и <br/>деньги будут у вас в 23:49</span>
+        <!-- <span class="copyright__timer__text">Заполните заявку сейчас, и <br/>деньги будут у вас в 23:49</span> -->
         <a href="/reg"> <button class="button">Получить деньги</button> </a>
     </div>
 </div>

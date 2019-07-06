@@ -2,6 +2,7 @@ const amount = document.getElementById("amount");
 const period = document.getElementById("period");
 const amountStr = document.getElementById("amountStr");
 const periodStr = document.getElementById("periodStr");
+let chance = '95';
 
 let percent = 14;
 
@@ -39,7 +40,7 @@ noUiSlider.create(period, {
 
 amount.noUiSlider.on('update', (val, handle) => {
     const result = hundredSpace(Number(val[handle]));
-    amountStr.innerHTML = result;
+    amountStr.innerText = result;
 
     if (result < 10000) {
         percent = 14;
@@ -60,6 +61,22 @@ amount.noUiSlider.on('update', (val, handle) => {
     if(val[handle] >= 10000) period.noUiSlider.set(1);
     if(val[handle] >= 30000) period.noUiSlider.set(2);
     if(val[handle] >= 50000) period.noUiSlider.set(3);
+
+    if (Number(val[handle]) >= 0 && Number(val[handle]) <= 8000) {
+      chance = '95';
+    } else if (Number(val[handle]) >= 9000 && Number(val[handle]) <= 15000) {
+        chance = '93';
+    } else if (Number(val[handle]) >= 16000 && Number(val[handle]) <= 30000) {
+        chance = '83';
+    } else if (Number(val[handle]) >= 31000 && Number(val[handle]) <= 35000) {
+        chance = '71';
+    } else if (Number(val[handle]) >= 36000 && Number(val[handle]) <= 55000) {
+        chance = '63';
+    } else if (Number(val[handle]) >= 56000 && Number(val[handle]) <= 80000) {
+        chance = '51';
+    }
+
+    document.querySelector('.chance__number').innerHTML = chance +" %";
 });
 
 period.noUiSlider.on('update', (val, handle) => {

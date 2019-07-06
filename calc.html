@@ -39,17 +39,26 @@
             </div> -->
         </div>
         <div class="calc__slogan">
-                <span class="calc__slogan__text">Первый займ - абсолютно бесплатно! <br/>При условии оплаты займа в срок</span>
+            <span class="calc__slogan__text">Успейте оформить безпроцентный займ!</span>
+            <div class="calc__timer">
+                <span class="calc__min"></span>:
+                <span class="calc__sec"></span>
             </div>
+        </div>
+
+        <div class="chance">
+            <span class="chance__text">Процент одобрения:</span>
+            <span class="chance__number" id="chance"></span>
+        </div>
     </div>
     <div class="calc_column" style="align-items: center; width: 30%;">
         <div class="block_calc_number">
             <span class="calc_number__number"></span>
-            <span class="calc_number__text" id="amountStr"></span> 
+            <span class="calc_number__text" id="amountStr"></span> Р
         </div>
         <div class="block_calc_number">
-            <span class="calc_number__number" id="periodStr"></span>
-            <span class="calc_number__text"></span> ДНЕЙ
+            <span class="calc_number__number" ></span>
+            <span class="calc_number__text" id="periodStr"></span> ДНЕЙ
         </div>
         <a href="/reg"> <button class="button calc">Получить заем</button> </a>
 
@@ -57,3 +66,4 @@
             
 </div>
 <script src="/js/calc.js"></script>
+<script src="/js/timer.js"></script>
