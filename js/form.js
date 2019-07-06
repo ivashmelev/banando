@@ -1,13 +1,51 @@
 const blockForm = document.querySelector(".block_form");
 const data = {};
 let eula;
+let factAdr;
 const api = '../sendApi.php';
 
 const uploadForm = async (url, block) => {
+	
+
 	const response = await fetch(url);
 	if(response.ok){
 		block.innerHTML = await response.text();
 		eula = document.getElementById("eula");
+
+		if(url == '/reg/form4.html'){
+			const form = document.querySelector('.form__field.form_4');
+			const checkbox = document.querySelector("#checkboxfact");
+			factAdr = checkbox.checked;
+			const twoform = document.getElementById("twoform");
+			checkbox.addEventListener('change', () =>{
+				if(!checkbox.checked){
+			form.classList.toggle('twoform');
+				
+					twoform.innerHTML = `
+						<div class="form__title">Фактический адрес</div><br/>
+						<form action="" class="form form_4" id="form-4">
+							<div class="block_input">
+									<input type="text" class="input" placeholder="Регион" id="region2" name="region2">
+									<input type="text" class="input" placeholder="Улица" id="street2" name="street2">
+							</div>
+							<div class="block_input" style="margin-left: 30px;">
+									<input type="text" class="input" placeholder="Город" id="city2" name="city2">
+									<div class="inner_block_input">
+											<input type="text" class="input" placeholder="Дом" id="ak_adress_fact_house" name="ak_adress_fact_house">
+											<input type="text" class="input" placeholder="Квартира" id="ak_adress_fact_flat" name="ak_adress_fact_flat">
+									</div>
+							</div>
+					</form>
+					`;
+					hintTwoForm();
+				}
+				else {
+					form.classList.toggle('twoform');
+					twoform.innerHTML = ``;
+				}
+			});
+		}
+	// console.log(checkbox.checked);
 		$("input[name='ak_phone']").mask("+7(999)999-99-99");
 		$("input[name='ak_bday']").mask("99.99.9999");
 		$("input[name='ak_gday']").mask("99.99.9999");
@@ -18,7 +56,7 @@ const uploadForm = async (url, block) => {
 }
 
 const checkForm = (form) => {
-	// return true;
+	return true;
   let result = true;
   let mail = document.querySelector("input[type='email']");
 
@@ -99,25 +137,6 @@ const getAddressDadata = async (query) =>{
   return JSON.stringify(response["suggestions"][0]);
 }
 
-const sendDataForVitrina = () => {
-  const data = JSON.parse(localStorage["data"]);
-  
-  const address = JSON.parse(data.ak_adress_fact_data);
-  const dadata = address.data;
-
-  const objGeo = {
-    geo: {
-      name: dadata.city,
-      region_kladr_id: dadata.region_kladr_id,
-      city_kladr_id: dadata.city_kladr_id
-    },
-    get_offers: true,
-    ref_link_kwargs:{}
-  }
-
-  return encodeURI(JSON.stringify(objGeo));
-}
-
 const send = () => {
 	return new Promise(async resolve => {
 		const data = JSON.parse(localStorage['data']);
@@ -162,9 +181,10 @@ const requestApi = async (api) => {
 			'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
 		},
 		body: serialize(data),
-		mode: "no-cors"
+		mode: "cors"
 	});
-	response = await send.json(); 
+	const response = await send.json(); 
+	localStorage['LoanID'] = JSON.stringify(response.LoanID);
 	if(response.ok){
 		resolve(response);
 	}
@@ -178,10 +198,11 @@ const queueLoad = async () => {
 	await uploadForm("/reg/form3.html", blockForm);
 	await saveData(3);
 	await uploadForm("/reg/form4.html", blockForm);
+	await hintAddress();
 	await saveData(4);
 	await send();
 	await requestApi(api);
-	location.href = `../vitrinaOffer.php?geo=${sendDataForVitrina()}`;
+	await pay(JSON.parse(localStorage['LoanID']), 123);
 }
 
 queueLoad();

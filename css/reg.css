@@ -231,17 +231,29 @@ input[type="checkbox"]:checked+.checkbox-custom::before {
     width: 340px;
 }
 
+.form__field.form_4.twoform{
+    height: 600px;
+
+}
+
+
+
 @media only screen and (min-width : 320px) and (max-width : 720px) {
     .form{
         flex-direction: column;
     }
 
+    .form__field.form_4.twoform{
+        height: 980px;
+    }
+
     .reg_content{
         width: 100%;
+        flex-direction: column;
     }
 
     .form__field{
-        width: 75%;
+        width: 77%;
     }
 
     .input{
@@ -280,4 +292,13 @@ input[type="checkbox"]:checked+.checkbox-custom::before {
     .form_4 .input{
         width: 218%;
     }
+
+    .timer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 60px;
+    }
+
+
+   
 }

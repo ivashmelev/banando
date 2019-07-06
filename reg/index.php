@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@19.4.2/dist/css/suggestions.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@19.4.2/dist/js/jquery.suggestions.min.js"></script>
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
     <script src="/js/maskedinput.js"></script>
     <link rel="stylesheet" href="/css/calc.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -28,6 +32,8 @@
     </div>
 </body>
 <link rel="stylesheet" href="/css/reg.css">
+<script src="/js/dadata.js"></script>
 <script src="/js/form.js"></script>
 <script src="/js/timer.js"></script>
+<script src="/js/payment.js"></script>
 </html>
