@@ -40,7 +40,7 @@ noUiSlider.create(period, {
 
 amount.noUiSlider.on('update', (val, handle) => {
     const result = hundredSpace(Number(val[handle]));
-    amountStr.innerText = `${result} Р`;
+    amountStr.innerText = `${result} ₽`;
 
     localStorage['summ'] = JSON.stringify(amountStr.innerText);
     localStorage['period'] = JSON.stringify(periodStr.innerText);
@@ -55,10 +55,10 @@ amount.noUiSlider.on('update', (val, handle) => {
         percent = 27;
       }
 
-    const firstOperator = document.querySelector('#one').innerText = `${hundredSpace(result)} р`;
+    const firstOperator = document.querySelector('#one').innerText = `${hundredSpace(result)} ₽`;
     const secondOperator = Math.round(result * (percent/100)).toFixed()
     // document.querySelector('#two').innerText = hundredSpace(secondOperator);
-    thirdOperator = document.querySelector('#three').innerText = `${hundredSpace(result)} р`;
+    thirdOperator = document.querySelector('#three').innerText = `${hundredSpace(result)} ₽`;
 
     if(val[handle] < 10000) period.noUiSlider.set(0);
     if(val[handle] >= 10000) period.noUiSlider.set(1);
