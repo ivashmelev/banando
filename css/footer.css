@@ -3,7 +3,7 @@ footer{
     margin-left: 34%;
     width: 60%;
 }
-/* ccdd00 */
+/* c46633 */
 .footer__text{
     color: #9f9f9f;
     font-size: 11px;
@@ -31,14 +31,22 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
+
+.copyright__logo img{
+    width: 100px;
+}
+
 
 .copyright__logo__text{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     letter-spacing: .1em;
-    color: #373737;
+    color: black;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    -webkit-text-fill-color: black;
     font-family: Montserrat;
     font-size: 28px;
     font-weight: 600;

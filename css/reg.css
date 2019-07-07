@@ -136,7 +136,7 @@ input[type="checkbox"]:checked+.checkbox-custom::before {
     top: 15%;
     width: 20px;
     height: 20px;
-    background: #ccdb2a;
+    background: #c46633;
     border-radius: 4px;
     text-align: center;
     color: #fff;
@@ -219,7 +219,7 @@ input[type="checkbox"]:checked+.checkbox-custom::before {
 }
 
 .sex.active{
-    background-color: #ccdb2a;
+    background-color: #c46633;
 }
 
 .sex:hover{

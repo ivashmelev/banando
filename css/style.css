@@ -8,13 +8,33 @@ html, body{
   margin: auto;
 }
 
+.logo img{
+  width: 100px;
+}
+
 .background{
   padding: 155px 0 100px;
   margin-bottom: 0;
-  background-image: url(/img/hero.jpg);
+  /* background-image: url(/img/hero.jpg); */
+  background-image: url(/img/kissclipart_call_center_cartoon.png);
+
   background-position: -290px 0px;
   background-repeat: repeat;
   background-size: cover;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  height: 813px;
+  width: 100%;
+  left: auto;
+
+  padding: 155px 0 100px;
+  margin-bottom: 0;
+  /* background-image: url(/img/hero.jpg); */
+  background-image: url(/img/kissclipart_call_center_cartoon.png);
+  background-position: 310px 170px;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   box-sizing: border-box;
   top: 0;
@@ -39,12 +59,12 @@ html, body{
   flex-direction: column;
   font-family: Montserrat;
   font-weight: 800;
-  color: white;
+  color: black;
   font-size: 48px;
 }
 
 .title__text-yellow{
-  color: #ccdd00;
+  color: #c46633;
 }
 
 .calc_section{
@@ -229,7 +249,7 @@ html, body{
   border-radius: 5px;
   text-decoration: none;
   box-sizing: border-box;
-  color: #373737;
+  color: white;
   text-align: center;
   cursor: pointer;
   /* -webkit-transition: all .3s linear;
@@ -237,7 +257,7 @@ html, body{
   transition: all .3s linear; */
   position: relative;
   outline: 0;
-  background-color: #ccdd00;
+  background-color: #c46633;
   margin-left: 20px;
   border: none;
   width: max-content;
@@ -246,7 +266,7 @@ html, body{
 
 .button:hover{
   cursor: pointer;
-  background-color: #b6c31c;
+  background-color: #a95020;
 }
 
 /* @media only screen and (min-width: 768px) and (max-width: 1024px) { */
@@ -360,9 +380,11 @@ html, body{
   }
 
   .about {
+
     width: 100%;
     flex-direction: column;
     align-items: center;
+    
   }
 
   .about__text {
@@ -377,6 +399,9 @@ html, body{
     /* background-color: #01a3bc; */
     /* background-image: unset; */
     background-position: -435px 0px;
+        /* background-color: #01a3bc; */
+    /* background-image: unset; */
+    background-position: -6px 0px;
   }
 
   .block_icon{

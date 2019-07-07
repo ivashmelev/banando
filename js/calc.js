@@ -2,6 +2,7 @@ const amount = document.getElementById("amount");
 const period = document.getElementById("period");
 const amountStr = document.getElementById("amountStr");
 const periodStr = document.getElementById("periodStr");
+
 let chance = '95';
 
 let percent = 14;
@@ -43,7 +44,7 @@ amount.noUiSlider.on('update', (val, handle) => {
     amountStr.innerText = `${result} ₽`;
 
     localStorage['summ'] = JSON.stringify(amountStr.innerText);
-    localStorage['period'] = JSON.stringify(periodStr.innerText);
+    
 
     if (result < 10000) {
         percent = 14;
@@ -84,7 +85,7 @@ amount.noUiSlider.on('update', (val, handle) => {
 
 period.noUiSlider.on('update', (val, handle) => {
     const result = Number(val[handle]);
-  
+    localStorage['period'] = JSON.stringify(periodStr.innerText);
     switch(result){
       case 0:
         periodStr.innerHTML = "1-14 ДНЕЙ";
@@ -100,6 +101,7 @@ period.noUiSlider.on('update', (val, handle) => {
         break;
     }
   });
+  localStorage['period'] = JSON.stringify("1-14 ДНЕЙ");
 
   period.addEventListener('mouseup', (e) => {
     if(period.noUiSlider.get() == 0) amount.noUiSlider.set(5000);

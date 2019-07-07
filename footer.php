@@ -13,7 +13,7 @@
 <div class="line"></div>
 <div class="copyrigth">
     <div class="copyright__logo">
-        <img src="/img/logo.svg" alt="" class="copyrigh__logo__img">
+        <img src="/img/srochno.png" alt="" class="copyrigh__logo__img">
         <span class="copyright__logo__text">Срочный кредит</span>
     </div>
     <div class="copyright__timer">

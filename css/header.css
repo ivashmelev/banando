@@ -22,14 +22,21 @@ header{
     display: flex;
     flex-direction: column;
     letter-spacing: .1em;
-    color: white;
+    color: black;
+    outline: none;
 }
   
 .logo__text-big{
     font-size: 28px;
+    color: black;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    -webkit-text-fill-color: black;
 }
   
 .logo__text-small{
+    color: black;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    -webkit-text-fill-color: black;
     margin-top: 15px;
     font-size: 20px;
 }
@@ -54,7 +61,7 @@ header{
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
     .logo img {
-        display: none;
+        /* display: none; */
     }
 
     header{

@@ -25,7 +25,7 @@
 }
 
 .block-offer:nth-child(1), .block-offer:nth-child(2), .block-offer:nth-child(3){
-  border: 2px solid #ccdb2a;
+  border: 2px solid #c46633;
 }
 
 .block-offer:hover{
@@ -56,7 +56,7 @@
   font-weight: bold;
   margin-top: 20px;
   font-size: 25px;
-  color: #ccdb2a;
+  color: #c46633;
 }
 
 .offer-feature{
@@ -67,7 +67,7 @@
 }
 
 .offer-button{
-  background-color: #ccdb2a;
+  background-color: #c46633;
   width: 206px;
   height: 50px;
   padding: 0 auto;
@@ -86,14 +86,14 @@
 
 .offer-button:hover{
   cursor: pointer;
-  background-color: #b6c31c;
+  background-color: #a95020;
 }
 
 .star{
   width: 60px;
   height: 60px;
   margin: 10px;
-  background: #ccdb2a;
+  background: #c46633;
   position: relative;
   display: flex;
   justify-content: center;
