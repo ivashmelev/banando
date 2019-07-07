@@ -3,23 +3,23 @@
     <div class="form__title">Адрес регистрации</div>
     <form action="" class="form form_4" id="form-4">
         <div class="block_input">
-            <input type="text" class="input" placeholder="Регион" id="region" name="region">
+            <!-- <input type="text" class="input" placeholder="Регион" id="region" name="region"> -->
+            <input type="text" class="input" placeholder="Город" id="city" name="city">
             <input type="text" class="input" placeholder="Улица" id="street" name="street">
         </div>
-        <div class="block_input" style="margin-left: 30px;">
-            <input type="text" class="input" placeholder="Город" id="city" name="city">
-            <div class="inner_block_input">
+        <div class="block_input">
+            <!-- <div class="inner_block_input"> -->
                 <input type="text" class="input" placeholder="Дом" id="ak_adress_reg_house" name="ak_adress_reg_house">
                 <input type="text" class="input" placeholder="Квартира" id="ak_adress_reg_flat" name="ak_adress_reg_flat">
-            </div>
+            <!-- </div> -->
         </div>
     </form>
+    <div class="form__title">Фактический адрес</div><br/>
     <div id="twoform"></div>
-    
     <label class="eula">
             <input type="checkbox"  class="checkbox" id="checkboxfact" name="agreement" value="yes" required="" checked>
             <span class="checkbox-custom" id="checkboxcutom"></span>
-            <span class="label">Совпадает с фактическим</span>
+            <span class="label">Совпадает с адресом регистрации</span>
         </label>
     <button class="button" id="button-4">Продолжить</button>
     </div>

@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
-	<title>Banando</title>
+	<title>Срочный кредит</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -107,7 +107,7 @@
 				<span class="about__title__text">О сервисе</span>
 			</div>
 			<div class="about__text">
-				<span class="about__text__text">Сервис подбора микрозаймов Banando. Оставьте заявку на получение <br/>
+				<span class="about__text__text">Сервис подбора микрозаймов Срочный кредит. Оставьте заявку на получение <br/>
 												денег: работаем со всеми клиентами — не важно, какая у вас <br/>
 												кредитная история и имеются ли текущие просрочки.</span>
 			</div>

@@ -42,6 +42,9 @@ amount.noUiSlider.on('update', (val, handle) => {
     const result = hundredSpace(Number(val[handle]));
     amountStr.innerText = result;
 
+    localStorage['summ'] = JSON.stringify(amountStr.innerText);
+    localStorage['period'] = JSON.stringify(periodStr.innerText);
+
     if (result < 10000) {
         percent = 14;
       } else if (result > 9000 && result < 30000) {
@@ -104,3 +107,4 @@ period.noUiSlider.on('update', (val, handle) => {
     if(period.noUiSlider.get() == 2) amount.noUiSlider.set(40000);
     if(period.noUiSlider.get() == 3) amount.noUiSlider.set(60000);
   });
+

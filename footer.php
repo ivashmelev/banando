@@ -16,7 +16,7 @@
 <div class="copyrigth">
     <div class="copyright__logo">
         <img src="/img/logo.svg" alt="" class="copyrigh__logo__img">
-        <span class="copyright__logo__text">Banando</span>
+        <span class="copyright__logo__text">Срочный кредит</span>
     </div>
     <div class="copyright__timer">
         <!-- <span class="copyright__timer__text">Заполните заявку сейчас, и <br/>деньги будут у вас в 23:49</span> -->

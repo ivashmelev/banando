@@ -45,7 +45,7 @@ span{
 .block_calc_number{
     display: flex;
     flex-direction: row;
-    margin-top: -40px;
+    margin-top: -70px;
     font-family: Montserrat;
     margin-right: 45px;
 }

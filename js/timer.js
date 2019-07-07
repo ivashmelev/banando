@@ -42,7 +42,7 @@ const timer = () => {
     clock.sec = sec;
     localStorage['timer'] = JSON.stringify(clock)
 
-  }, 10)
+  }, 1000)
 }
 
 if(!localStorage['timer']){

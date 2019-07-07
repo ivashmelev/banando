@@ -144,6 +144,5 @@ const hintTwoForm  = () => {
     $region2.css('box-sizing', 'unset');
     $city2.css('box-sizing', 'unset');
     $street2.css('box-sizing', 'unset');
-    $house2.css('box-sizing', 'unset');
+    $house2.css('box-sizing', 'unset');     
 }
-

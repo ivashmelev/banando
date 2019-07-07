@@ -22,20 +22,20 @@ const uploadForm = async (url, block) => {
 			form.classList.toggle('twoform');
 				
 					twoform.innerHTML = `
-						<div class="form__title">Фактический адрес</div><br/>
-						<form action="" class="form form_4" id="form-4">
-							<div class="block_input">
-									<input type="text" class="input" placeholder="Регион" id="region2" name="region2">
-									<input type="text" class="input" placeholder="Улица" id="street2" name="street2">
-							</div>
-							<div class="block_input" style="margin-left: 30px;">
-									<input type="text" class="input" placeholder="Город" id="city2" name="city2">
-									<div class="inner_block_input">
-											<input type="text" class="input" placeholder="Дом" id="ak_adress_fact_house" name="ak_adress_fact_house">
-											<input type="text" class="input" placeholder="Квартира" id="ak_adress_fact_flat" name="ak_adress_fact_flat">
-									</div>
-							</div>
-					</form>
+						
+					<form action="" class="form form_4" id="form-4">
+					<div class="block_input">
+							<!-- <input type="text" class="input" placeholder="Регион" id="region" name="region"> -->
+							<input type="text" class="input" placeholder="Город" id="city2" name="city2">
+							<input type="text" class="input" placeholder="Улица" id="street2" name="street2">
+					</div>
+					<div class="block_input">
+							<!-- <div class="inner_block_input"> -->
+									<input type="text" class="input" placeholder="Дом" id="ak_adress_fact_house" name="ak_adress_fact_house">
+									<input type="text" class="input" placeholder="Квартира" id="ak_adress_fact_flat" name="ak_adress_fact_flat">
+							<!-- </div> -->
+					</div>
+			</form>
 					`;
 					hintTwoForm();
 				}
@@ -145,8 +145,8 @@ const send = () => {
 		data.ak_adress_reg_data = await getAddressDadata(address);
 		data.ak_adress_reg = 'str'
 		data.ak_adress_fact = 'str'
-		data.summ = 1;
-		data.time = 1;
+		data.summ = JSON.parse(localStorage['summ']);
+		data.time = JSON.parse(localStorage['period']);
 		data.ak_passport = `${data.seria} ${data.number}`;
 		data.ak_adress_fact_house = data.ak_adress_reg_house;
 		data.ak_adress_fact_flat = data.ak_adress_reg_flat;

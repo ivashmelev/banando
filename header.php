@@ -3,7 +3,7 @@
 	<div class="logo">
 		<a href ="/"><img src="/img/logo.svg" alt="Логотип" class="logo__img"></a>
 		<div class="logo__text">
-			<span class="logo__text-big">Banando</span>
+			<span class="logo__text-big">Срочный кредит</span>
 			<span class="logo__text-small">онлайн займы</span>
 		</div>
 	</div>
