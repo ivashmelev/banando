@@ -7,8 +7,8 @@
 			<span class="logo__text-small">онлайн займы</span>
 		</div>
 	</div>
-	<div class="phone">
+	<!-- <div class="phone">
 		<span class="phone__text">Горячая линия</span>
 		<span class="phone__text">8 800 555 35 35</span>
-	</div>
+	</div> -->
 </header>

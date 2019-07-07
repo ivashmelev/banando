@@ -130,6 +130,12 @@ a{
         justify-content: space-between;
     }
 
+    .wrapper_calc {
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
     .calc__title{
         margin-top: 70px;
     }
@@ -140,7 +146,7 @@ a{
     }
 
     .result{
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .calc__slogan__text{
@@ -148,13 +154,14 @@ a{
     }
 
     .calc_number__text{
-        width: 390px;
+        /* width: 390px; */
+        width: unset;
     }
 
     .block_calc_number {
         display: flex;
         flex-direction: row;
-        margin-top: 43px;
+        margin-top: 21px;
         font-family: Montserrat;
         margin-right: 45px;
         width: 100%;
@@ -167,6 +174,8 @@ a{
     .button.calc{
         margin-bottom: 25px;
         height: 80px;
+        width: 170px;
+        margin-right: 20px;
     }
 
     .chance{

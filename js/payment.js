@@ -34,7 +34,7 @@ const pay = (LoanID, key) => {
     }
   
     widget.charge({ // options
-     publicId: 'pk_eaf12d45a1dc2c28ee03fe9eb39f2', // test
+     publicId: 'pk_1a2dea2dde92e64fb9b0b433cf08a', // test
       // publicId: 'pk_11d1d85c3da57c9d96834a48aac84', // prod
       description: `Мы спишем с карты 1 рубль для ее проверки. Это не обязывает брать займ.`,
       amount: 1, //сумма

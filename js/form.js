@@ -156,7 +156,7 @@ const send = () => {
 		data.action = 'ak_save_form';
 		data.utm_term = "str";
 		data.url_params = '{"":""}';
-		data.own = "odobren";
+		data.own = "srochniy";
 		localStorage['data'] = JSON.stringify(data);
 		console.log(data);
 		resolve(data);

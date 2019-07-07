@@ -40,7 +40,7 @@ noUiSlider.create(period, {
 
 amount.noUiSlider.on('update', (val, handle) => {
     const result = hundredSpace(Number(val[handle]));
-    amountStr.innerText = result;
+    amountStr.innerText = `${result} Р`;
 
     localStorage['summ'] = JSON.stringify(amountStr.innerText);
     localStorage['period'] = JSON.stringify(periodStr.innerText);
@@ -55,10 +55,10 @@ amount.noUiSlider.on('update', (val, handle) => {
         percent = 27;
       }
 
-    const firstOperator = document.querySelector('#one').innerText = hundredSpace(result);
+    const firstOperator = document.querySelector('#one').innerText = `${hundredSpace(result)} р`;
     const secondOperator = Math.round(result * (percent/100)).toFixed()
     // document.querySelector('#two').innerText = hundredSpace(secondOperator);
-    thirdOperator = document.querySelector('#three').innerText = hundredSpace(result);
+    thirdOperator = document.querySelector('#three').innerText = `${hundredSpace(result)} р`;
 
     if(val[handle] < 10000) period.noUiSlider.set(0);
     if(val[handle] >= 10000) period.noUiSlider.set(1);
@@ -74,9 +74,9 @@ amount.noUiSlider.on('update', (val, handle) => {
     } else if (Number(val[handle]) >= 31000 && Number(val[handle]) <= 35000) {
         chance = '71';
     } else if (Number(val[handle]) >= 36000 && Number(val[handle]) <= 55000) {
-        chance = '63';
+        chance = '70';
     } else if (Number(val[handle]) >= 56000 && Number(val[handle]) <= 80000) {
-        chance = '51';
+        chance = '70';
     }
 
     document.querySelector('.chance__number').innerHTML = chance +" %";
@@ -87,16 +87,16 @@ period.noUiSlider.on('update', (val, handle) => {
   
     switch(result){
       case 0:
-        periodStr.innerHTML = "1-14";
+        periodStr.innerHTML = "1-14 ДНЕЙ";
         break;
       case 1:
-        periodStr.innerHTML = "15-30";
+        periodStr.innerHTML = "15-30 ДНЕЙ";
         break;
       case 2: 
-        periodStr.innerHTML = "30-180";
+        periodStr.innerHTML = "30-180 ДНЕЙ";
         break;
       case 3: 
-        periodStr.innerHTML = "210-365";
+        periodStr.innerHTML = "210-365 ДНЕЙ";
         break;
     }
   });
