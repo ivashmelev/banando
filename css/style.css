@@ -193,10 +193,10 @@ html, body{
 .about{
   width: 80%;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .about__title{
