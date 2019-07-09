@@ -1,6 +1,6 @@
 .main-block-offers{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-bottom: 100px;
   flex-direction: row;
   overflow: auto;

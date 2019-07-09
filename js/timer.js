@@ -1,10 +1,17 @@
 const timer = () => {
   const minStr = document.querySelector('.calc__min');
   const secStr = document.querySelector('.calc__sec');
+
+
   let min, sec, clock = {};
 
   if(min === 0 && sec === 1){
-    return;
+    if(timer){
+      timer.style.display = 'none';
+    }
+    if(timerCalc){
+      timerCalc.style.display = 'none';
+    }
   }
 
   if(localStorage['timer']){
@@ -24,6 +31,14 @@ const timer = () => {
       sec = 59;
     }
     if(min === 0 && sec === 1 || min < 0 && sec < 0){
+      const timer = document.querySelector('.timer');
+      const timerCalc = document.querySelector('.calc__timer');
+      if(timer){
+        timer.style.display = 'none';
+      }
+      if(timerCalc){
+        timerCalc.style.display = 'none';
+      }
       secStr.innerText = '00';
       minStr.innerText = '00';
       clearInterval(start);
@@ -56,6 +71,14 @@ else {
   else {
     const minStr = document.querySelector('.calc__min');
     const secStr = document.querySelector('.calc__sec');
+    const timer = document.querySelector('.timer');
+    const timerCalc = document.querySelector('.calc__timer');
+    if(timer){
+      timer.style.display = 'none';
+    }
+    if(timerCalc){
+      timerCalc.style.display = 'none';
+    }
     secStr.innerText = '00';
     minStr.innerText = '00';
   }

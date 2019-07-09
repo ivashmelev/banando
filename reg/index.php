@@ -20,7 +20,7 @@
 <body>
     <div class="wrapper">
         <?php require_once("../header.php"); ?>
-        <script>ym(54075076, 'reachGoal', 'form_start');</script>
+        <script>ym(54361468, 'reachGoal', 'form_start');</script>
         <div class="reg_content">
             <div class="block_form"></div>
             <div class="timer">

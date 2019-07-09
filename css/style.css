@@ -85,6 +85,7 @@ html, body{
   align-items: center;
   margin: auto;
   margin-top: 70px;
+  display: none;
 }
 
 .icon{
@@ -106,7 +107,7 @@ html, body{
   display: flex;
   flex-direction: row;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 280px;
   justify-content: space-between;
 }
 

@@ -45,7 +45,7 @@ const pay = (LoanID, key) => {
     },
       function (options) { // success
         resolve(true);
-        ym(54075076, 'reachGoal', 'paid_1rub');
+        ym(54361468, 'reachGoal', 'paid_1rub');
         location.href = `../vitrinaOffer.php?geo=${sendDataForVitrina()}`;
       },
       function (reason, options) { // fail
