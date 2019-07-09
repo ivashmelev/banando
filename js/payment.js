@@ -26,15 +26,15 @@ const pay = (LoanID, key) => {
 
     subscribe.CloudPayments = {
       recurrent: {
-        interval: 'Month',
+        interval: 'Day',
         startDate: new Date(),
-        period: 1,
+        period: 5,
         amount: 399
       }
     }
   
     widget.charge({ // options
-     publicId: 'pk_1a2dea2dde92e64fb9b0b433cf08a', // test
+     publicId: 'pk_1a2dea2dde92e64fb9b0b433cf08a', // prod
       // publicId: 'pk_11d1d85c3da57c9d96834a48aac84', // prod
       description: `Мы спишем с карты 1 рубль для ее проверки. Это не обязывает брать займ.`,
       amount: 1, //сумма

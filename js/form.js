@@ -56,12 +56,15 @@ const uploadForm = async (url, block) => {
 }
 
 const checkForm = (form) => {
-	return true;
+	// return true;
   let result = true;
   let mail = document.querySelector("input[type='email']");
 
 	for(const input of form){
 		if(input.value === ""){
+			if(input.id === 'ak_adress_reg_flat' || input.id === 'ak_adress_fact_flat'){
+				break;
+			}
 			alert("Заполните все поля!");
 			result = false;
 			break;
@@ -113,6 +116,7 @@ const saveData = (id) => {
 						const data = JSON.parse(localStorage['data']);
 						data.agreeRules = true;
 						localStorage['data'] = JSON.stringify(data);
+						window.scrollTo(0, 0);
 						resolve(data);
 					}
 				}

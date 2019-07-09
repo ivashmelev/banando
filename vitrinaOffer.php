@@ -35,7 +35,7 @@ $geo = "data=".$_GET["geo"];
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://lk.3lida.ru/showcase/odobren.credit/?hide=2403",
+  CURLOPT_URL => "https://lk.3lida.ru/showcase/srochniy.credit/?hide=2403",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
